@@ -1,8 +1,8 @@
 import { useFonts } from 'expo-font';
-import { StatusBar } from 'expo-status-bar';
-import { useEffect, useState } from 'react';
-import { Dimensions, StyleSheet, Text, View } from 'react-native';
-import ShopNavigator from './src/navgation/ShopNavigator';
+import { StyleSheet } from 'react-native';
+import MainNavigator from './src/navgation';
+import { Provider } from 'react-redux';
+import store from './src/store';
 
 export default function App() {
 	// const [isPortrait, setIsPortrait] = useState(true);
@@ -26,11 +26,9 @@ export default function App() {
 	if (!loaded) return null;
 
 	return (
-		<ShopNavigator />
-		// ---------------------EJEMPLO DE CAMBIO DE ORIENTACION DE PANTALLA
-		// <View style={styles.container}>
-		// 	{isPortrait ? <Text style={styles.texto}>VERTICAL</Text> : <Text style={styles.texto}>HORIZONTAL</Text>}
-		// </View>
+		<Provider store={store}>
+			<MainNavigator />
+		</Provider>
 	);
 }
 

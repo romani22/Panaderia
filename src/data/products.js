@@ -5,14 +5,14 @@ export const PRODUCTS = [
 		name: 'Baguette',
 		description: 'Clasico Pan Frances',
 		weight: '350gr',
-		precio: 16,
+		price: 16,
 	},
 	{
 		id: '2',
 		category: '2',
 		name: 'Pan de alta hidratacion, miga alveolada y corteza crujiente',
 		weight: '800gr',
-		precio: 30,
+		price: 30,
 	},
 	{
 		id: '3',
@@ -20,7 +20,7 @@ export const PRODUCTS = [
 		name: 'Pan de hamburgesa',
 		description: 'Textura suave, decorado con semilla de sesamo tostada',
 		weight: '120gr',
-		precio: 10,
+		price: 10,
 	},
 	{
 		id: '4',
@@ -28,7 +28,7 @@ export const PRODUCTS = [
 		name: 'Pan de molde integral de centeno',
 		description: 'Pidelo entero o tajado, con o sin semilla',
 		weight: '200gr',
-		precio: 35,
+		price: 35,
 	},
 	{
 		id: '5',
@@ -36,6 +36,6 @@ export const PRODUCTS = [
 		name: 'Dona de chocolate',
 		description: 'Dona cubierta de chocolate, puedes pedirlo con chocolate blanco',
 		weight: '300gr',
-		precio: 20,
+		price: 20,
 	},
 ];
